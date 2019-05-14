@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  font-family: "Permanent Marker", cursive;
+}
+img {
+  max-width: 70%;
+  border-radius: 100%;
+  transition: 700ms;
+  opacity: 1;
+}
+h1 {
+  padding: 10% 0;
+  font-size: 4rem;
+  color: white;
+}
+
+/* Rotate */
+img {
+	transform: rotate(15deg);
+	transition: .3s ease-in-out;
+  position: relative;
+}
+img:hover {
+	transform: rotate(0) scale(1.4);
+}
+
+.row {
+  background-image: url(images/versus4.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10% 10%;
+}
+
+@media (max-width:1028px) {
+
+  img {
+    width: 50%;
+  }
+
+  .dani {
+    right: 35%;
+    bottom: 20%;
+  }
+
+  .arthur {
+    left: 35%;
+    top: 20%;
+  }
+}
